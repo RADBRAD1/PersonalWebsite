@@ -10,6 +10,50 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+			<!-- div {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+        color:lightgreen;
+      } --> <style> 
+.main {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}	
+
+
+.img {
+    max-width: 100%;
+    object-fit: contain;
+	max-height:300px;
+	background-position:center;
+}
+     
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center2 {
+  margin: 0;
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+    </style>
+
+		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -20,7 +64,9 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon fa-gem"></span>
+							<span>
+								<img src="images/ai-gen-phoenix-1.webp" alt="" class = "center2"/>
+						</span>
 						</div>
 						<div class="content">
 							<div class="inner">
@@ -47,37 +93,58 @@
 						<!-- Intro -->
 							<article id="aboutme">
 								<h2 class="major">About me</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p> I am a passionate and eager aspiring data analyst, avid learner, and fighter with a background in data transformation and statistical modeling. With experience creating projects in all stages of the software development life-cycle, I turn your ideas and vision into user-ready applications as well as relevant data reports and dashboards. Some examples include: 
 
-									1. Created resilient data infrastructure for fashion/social media web application.
-									2. Engineered for data lifecycle when creating a hotel booking application's end-to-end testing
-									3. Created secure architecture for a custom Shopify Store 
-									
+								<span class="image main" style="max-height:450px; max-width:450px; overflow: hidden"><img src="images/IMG_0488.jpg" alt="" /></span>
+								<div> 
+								<p> I am a passionate and eager aspiring data analyst, avid learner, and fighter with a background in data transformation and statistical modeling.
+									 With experience creating projects in all stages of the software development life-cycle, I turn your ideas and vision 
+									 into user-ready applications as well as relevant data reports and dashboards. Some examples include: 
+									<pre class="inner-pre" style="font-size: 11px">1. Created resilient data infrastructure for fashion/social media web application.
+2. Engineered for data lifecycle when creating a hotel booking application's e2e testing
+3. Created secure architecture for a custom Shopify Store</pre><br/>
 									Whether it be with martial arts, colleagues, and software development I bring a fighting spirit and resiliency. I get excited about opportunities where I can leverage my technical skills and soft skills to provide you with maximum value for your business and company. 
 									
 									Skills & Technologies: Python | R | RESTful APIs | Java | MySQL | PostgreSQL | JavaScript | Bash | MongoDB | Linux | HTML/CSS | PHP | AWS services | GitHub
-									 <br /> </a>.</p>
-								<p> <a href="#projects">Projects </p>
+									 <br />  </p>
+									 </div>
+
+								<p> <a href="#projects">Projects </a> </p>
 							</article>
 
 						<!-- Work -->
 							<article id="projects">
 								<h2 class="major">Projects</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<span><img src="images/got-westeros-map.jpg" alt="" class = "center"/></span>
 								<p> 
 									<h3> MERN stack Hotel Booking App (MongoDB, Express, Node.js, React)</h3> 
-									•	Created a user login API with an authentication system which solidified data integrity and security.
-•	Wrote image uploading software feature to allow customization of posts.
-•	Added feature enabling user sorting, searching, and filtering of hotels to enhance user experience.
+									In this project, I created a full-stack hotel booking application for residents in the mythical world of westeros.
+									To create the static website elements for users, I used typescript with tailwind css. I created multiple API endpoints
+									 and routing to connect the backend and frontend elements using express and Node. With image upload and storage when creating 
+									 hotels, and storing user information within secure mongodb connections, I learned networking, basic security and deployment.
+									 To make sure the application is resilient in production, end-to-end testing was done throughout the process to ensure accurate 
+									 code functionality and optimal user experience. 
 
+									•	Created a user login API with an authentication system which solidified data integrity and security. <br/>
+									•	Wrote image uploading software feature to allow customization of posts.<br/>
+									•	Added feature enabling user sorting, searching, and filtering of hotels to enhance user experience. <br/>
+								</p>
 
-								   </p>
+								<span><img src="images/unsplash-stock-app.avif" alt="" class = "center"/></span>
 								<p>
 									<h3> Market Sentiment Analysis (R, python) </h3> 
-									•	Designed data cleaning and transformation pipeline with google analytics, twitter APIs.
-									•	Used machine learning techniques to rank the most popular words in prepared data to predict trends.
-									</p>
+									•	Designed data cleaning and transformation pipeline with google analytics, twitter APIs. <br/>
+									•	Used machine learning techniques to rank the most popular words in prepared data to predict trends.<br/>
+								</p>
+
+								<p>
+									<h3> Shopify Admin API application</h3>
+
+								</p>
+
+								<p>
+									<h3> Personal Website </h3>
+
+								</p>
 							</article> 
 
 						<!-- About 
@@ -115,9 +182,27 @@
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									
 								</ul>
 							</article>
 
+							<article id="morechris">
+								<h2 class="major">More Chris!</h2>
+								<p> In addition to technical interests in Data Analysis and engineering, I also have a few hobbies: <br />
+									1. I love powerlifting and martial arts. Currently closely approaching a 500lb deadlift, and balancing that out  <br />
+										by getting teeped in Muay thai then armbarred in Jiu-Jitsu<br />
+									2. No feeling beats reading a Science or historical fiction novel wrapped with apricitic envelope <br />
+									3. While brushing up on my spanish and mandarin with novels, I love to learn arabic on the side! <br />
+									4. Comic book stories and philosophy are undeniably exciting 
+								</p>
+
+								
+								<p> If you are interested you can check out my <a href="http://zheyuli.com">Personal Blog</a> and other links: <br />
+									<a href="https://www.goodreads.com/vanirrakhsh" class="icon brands fa-goodreads" style="font-size: 1.5em"><span class="label">Goodreads</span></a>
+								 </p>
+
+								
+							</article> 
 						<!-- Elements -->
 							<article id="elements">
 								<h2 class="major">Elements</h2>
@@ -141,21 +226,8 @@
 									<h4>Preformatted</h4>
 									<pre><code>i = 0;
 							<!-- Personal Website -->
-							<article id="morechris">
-								<h2 class="major"> More Chris!</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /> </span>
-								<p> In addition to technical interests in Data Analysis and engineering, I also have many hobbies: 
-									1. I love powerlifting and martial arts. Currently closely approaching a 500lb deadlift, and balancing that out  <br />
-										by getting teeped in Muay thai then armbarred in Jiu-Jitsu<br />
-									2. No feeling beats reading a Science or historical fiction novel wrapped with apricitic envelope <br />
-									3. While brushing up on my spanish and mandarin with novels, I love to learn arabic on the side! <br />
-									4. Comic book stories and philosophy are undeniably exciting
-								</p>
 
-								<p> If you are interested you can check out my <a href="#">Personal Blog</a> </p>
-
-								
-							</article> 
+							
 
 while (!deck.isInOrder()) {
     print 'Iteration ' + i;
